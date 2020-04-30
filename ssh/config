@@ -1,0 +1,6 @@
+Host so-unp
+    Hostname if011.fi.mdn.unp.edu.ar
+    Port x
+    User x
+    IdentitiesOnly yes
+
