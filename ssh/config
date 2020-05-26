@@ -3,4 +3,5 @@ Host so-unp
     Port x
     User x
     IdentitiesOnly yes
+    ForwardAgent yes
 
