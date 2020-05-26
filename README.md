@@ -1,3 +1,4 @@
-# Archivos de configuración
+# Config files
 
-Varios archivos de configuración.
+Configuration files for my most used tools.
+
