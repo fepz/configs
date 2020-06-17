@@ -29,7 +29,7 @@ set number
 " leader key
 let mapleader = "q"
 
-" visual clue that the leader key was pressed
+" show visual clue that the leader key was pressed
 set showcmd
 
 " color scheme 
