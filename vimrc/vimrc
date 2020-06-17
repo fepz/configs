@@ -26,6 +26,9 @@ set autoindent
 " show line numbers
 set number
 
+" leader key
+let mapleader = "q"
+
 " color scheme 
 "colo evening 
 colo desert
