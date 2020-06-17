@@ -29,6 +29,9 @@ set number
 " leader key
 let mapleader = "q"
 
+" visual clue that the leader key was pressed
+set showcmd
+
 " color scheme 
 "colo evening 
 colo desert
