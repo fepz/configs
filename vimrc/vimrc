@@ -34,6 +34,9 @@ set showcmd
 
 " color scheme 
 "colo evening 
-colo desert
-syntax on
+"colo desert
+"syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 
