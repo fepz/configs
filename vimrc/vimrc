@@ -5,12 +5,17 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" ft-man-plugin to show man pages
+runtime ftplugin/man.vim
+
 " load plugins
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
+Plug 'altercation/vim-colors-solarized'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 filetype plugin indent on 
@@ -26,8 +31,8 @@ set autoindent
 " show line numbers
 set number
 
-" leader key
-let mapleader = "q"
+" leader key -- the q key is not a good option...
+" let mapleader = "q"
 
 " show visual clue that the leader key was pressed
 set showcmd
@@ -36,7 +41,25 @@ set showcmd
 "colo evening 
 "colo desert
 "syntax on
+"
 syntax enable
 set background=dark
 colorscheme solarized
+
+setlocal conceallevel=2
+
+" key shortcut for opening nerdtree
+map <C-n> :NERDTreeToggle<CR>
+
+"" Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+"" Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
 
