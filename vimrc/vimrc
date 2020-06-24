@@ -1,7 +1,7 @@
 " gvim on windows: copy this file as Users/user/_vimrc
 " neovim on windows: copy this file as AppData\Local\nvim\init.vim
 
-" vimplug automatic installation
+" Vimplug automatic installation
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -11,7 +11,7 @@ endif
 " ft-man-plugin to show man pages
 runtime ftplugin/man.vim
 
-" load plugins
+" Load plugins
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
@@ -23,7 +23,7 @@ call plug#end()
 
 filetype plugin indent on 
 
-" indentation
+" Indentation
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -31,13 +31,13 @@ set softtabstop=4
 
 set autoindent
 
-" show line numbers
+" Show line numbers
 set number
 
-" leader key -- the q key is not a good option...
+" Leader key -- the q key is not a good option...
 " let mapleader = "q"
 
-" show visual clue that the leader key was pressed
+" Show visual clue that the leader key was pressed
 set showcmd
 
 " color scheme 
@@ -51,7 +51,7 @@ colorscheme solarized
 
 setlocal conceallevel=2
 
-" key shortcut for opening nerdtree
+" Key shortcut for opening nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
 " Copy to clipboard
@@ -66,7 +66,7 @@ nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 
-" break line but not in the middle of a word 
+" Break line but not in the middle of a word 
 autocmd BufNewFile,BufRead *.txt,*.md set formatoptions=l
 autocmd BufNewFile,BufRead *.txt,*.md set lbr
 
