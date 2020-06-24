@@ -1,0 +1,4 @@
+" Font for GUI frontends
+" gvim on windows: copy this file as Users/user/_gvimrc
+" neovim on windows: copy this file as AppData\Local\nvim\ginit.vim
+set guifont=MesloLGS\ NF:h10:cANSI

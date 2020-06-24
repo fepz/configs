@@ -1,3 +1,6 @@
+" gvim on windows: copy this file as Users/user/_vimrc
+" neovim on windows: copy this file as AppData\Local\nvim\init.vim
+
 " vimplug automatic installation
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -62,4 +65,8 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
+" break line but not in the middle of a word 
+autocmd BufNewFile,BufRead *.txt,*.md set formatoptions=l
+autocmd BufNewFile,BufRead *.txt,*.md set lbr
 
