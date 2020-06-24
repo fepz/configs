@@ -70,3 +70,21 @@ vnoremap <leader>P "+P
 autocmd BufNewFile,BufRead *.txt,*.md set formatoptions=l
 autocmd BufNewFile,BufRead *.txt,*.md set lbr
 
+" Use ctrl-[hjkl] to select the active split
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
+" show match as search proceeds
+set incsearch
+" search hightlighting
+set hlsearch
+
+" making Q harmless (no entering ex mode)
+nnoremap Q <nop>
+
+" show eol and tabs with <leader>l
+nmap <leader>l : set list!<CR>
+set listchars=tab:»\ ,eol:¬
+
