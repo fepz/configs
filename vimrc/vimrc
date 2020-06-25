@@ -8,6 +8,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" encoding
+set encoding=UTF-8
+set fileencoding=UTF-8
+
 " ft-man-plugin to show man pages
 runtime ftplugin/man.vim
 
@@ -19,6 +23,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'altercation/vim-colors-solarized'
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 filetype plugin indent on 
