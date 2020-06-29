@@ -12,4 +12,11 @@ alias ssh=/home/fep/bin/ssh-ident/ssh
 
 # suffix aliases
 alias -s c=vim
+alias -s h=vim
 
+# lsd
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
