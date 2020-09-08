@@ -24,6 +24,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'altercation/vim-colors-solarized'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 filetype plugin indent on 
