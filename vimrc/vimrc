@@ -22,6 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'altercation/vim-colors-solarized'
+Plug 'NLKNGuyen/papercolor-theme'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'rust-lang/rust.vim'
@@ -57,7 +58,8 @@ set showcmd
 "
 syntax enable
 set background=dark
-colorscheme solarized
+"colorscheme solarized
+colorscheme PaperColor
 
 setlocal conceallevel=2
 
