@@ -26,6 +26,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 filetype plugin indent on 
@@ -46,6 +47,8 @@ set number
 
 " Show visual clue that the leader key was pressed
 set showcmd
+
+"set t_Co=256
 
 " color scheme 
 "colo evening 
@@ -94,4 +97,19 @@ nnoremap Q <nop>
 " Show eol and tabs with <leader>l
 nmap <leader>l : set list!<CR>
 set listchars=tab:»\ ,eol:¬
+
+" match background color in gitgutter column
+highlight clear SignColumn
+
+" switch buffers by number
+:nnoremap <F5> :buffers<CR>:buffer<Space>
+
+hi Terminal ctermbg=0 
+"ctermfg=blue guibg=lightgrey guifg=blue
+"
+"let g:terminal_ansi_colors = [
+"  \'#eeeeee', '#af0000', '#008700', '#5f8700',
+"  \'#0087af', '#878787', '#005f87', '#444444',
+"  \'#bcbcbc', '#d70000', '#d70087', '#8700af',
+"  \'#d75f00', '#d75f00', '#005faf', '#005f87' ]
 
