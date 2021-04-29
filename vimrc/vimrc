@@ -115,6 +115,10 @@ hi Terminal ctermbg=0
 "  \'#bcbcbc', '#d70000', '#d70087', '#8700af',
 "  \'#d75f00', '#d75f00', '#005faf', '#005f87' ]
 
-" remap ls to Buffers from fzf-vim + ripgrep
-cmap ls Buffers
+" rename  Buffers to B
+command B Buffers
+command F Files
+
+" map ; to Files
+map ; :Files<CR>
 
