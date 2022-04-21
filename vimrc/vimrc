@@ -137,3 +137,7 @@ let g:syntastic_check_on_wq = 0
 
 " Can use mouse to scroll or switch buffers
 set mouse=a
+
+"  edit multiple buffers without saving the modifications made to a buffer
+"  while loading other buffers.
+set hidden
