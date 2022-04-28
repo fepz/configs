@@ -126,6 +126,9 @@ command F Files
 map ; :Files<CR>
 map _ :Rg<CR>
 
+" show all buffers when there is only one tab open
+let g:airline#extensions#tabline#enabled = 1
+
 " Can use mouse to scroll or switch buffers
 set mouse=a
 
