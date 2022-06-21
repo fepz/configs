@@ -8,6 +8,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" wrap only at a character 
+set linebreak
+
 " encoding
 set encoding=UTF-8
 set fileencoding=UTF-8
