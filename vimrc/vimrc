@@ -110,6 +110,9 @@ highlight clear SignColumn
 " switch buffers by number
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
+" activate Goyo concentration mode
+noremap <C-g> :Goyo<CR>
+
 hi Terminal ctermbg=0 
 "ctermfg=blue guibg=lightgrey guifg=blue
 "
