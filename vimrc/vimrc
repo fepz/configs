@@ -127,8 +127,9 @@ hi Terminal ctermbg=0
 command B Buffers
 command F Files
 
-" map ; to Files
-map ; :Files<CR>
+" multiple options for :Files, with leader key and ctrl
+nmap <leader>f :Files<CR>
+nmap <silent><c-p> :Files<CR>
 map _ :Rg<CR>
 
 " show all buffers when there is only one tab open
