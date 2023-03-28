@@ -51,9 +51,6 @@ set autoindent
 " Show line numbers
 set number
 
-" Leader key -- the q key is not a good option...
-" let mapleader = "q"
-
 " Show visual clue that the leader key was pressed
 set showcmd
 
