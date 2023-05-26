@@ -9,7 +9,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" wrap only at a character 
+" wrap only at a character
 set linebreak
 
 " encoding
@@ -39,7 +39,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'dense-analysis/ale'
 call plug#end()
 
-filetype plugin indent on 
+filetype plugin indent on
 
 " Indentation
 set expandtab
@@ -57,8 +57,8 @@ set showcmd
 
 "set t_Co=256
 
-" color scheme 
-"colo evening 
+" color scheme
+"colo evening
 "colo desert
 "syntax on
 "
@@ -87,7 +87,7 @@ nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 
-" Break line but not in the middle of a word 
+" Break line but not in the middle of a word
 autocmd BufNewFile,BufRead *.txt,*.md set formatoptions=l
 autocmd BufNewFile,BufRead *.txt,*.md set lbr
 
@@ -118,7 +118,7 @@ highlight clear SignColumn
 " activate Goyo concentration mode
 noremap <C-g> :Goyo<CR>
 
-hi Terminal ctermbg=0 
+hi Terminal ctermbg=0
 "ctermfg=blue guibg=lightgrey guifg=blue
 "
 "let g:terminal_ansi_colors = [
