@@ -27,6 +27,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'NLKNGuyen/papercolor-theme'
 Plug 'preservim/nerdtree'
@@ -62,9 +63,12 @@ set showcmd
 "syntax on
 "
 syntax enable
-set background=dark
+set background=light
 "colorscheme solarized
 colorscheme PaperColor
+
+" papercolor theme in vim-airline
+let g:airline_theme='papercolor'
 
 setlocal conceallevel=2
 
