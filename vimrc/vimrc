@@ -145,3 +145,10 @@ set mouse=a
 "  edit multiple buffers without saving the modifications made to a buffer
 "  while loading other buffers.
 set hidden
+
+" make ALE display erros using the Neovim diagnostics API
+let g:ale_use_neovim_diagnostics_api = 1
+
+" map the keys Ctrl-k and Ctrl-j to moving between errors
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
