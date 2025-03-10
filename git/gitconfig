@@ -1,0 +1,49 @@
+# My .git configuration ...
+# 
+# See: https://blog.gitbutler.com/how-git-core-devs-configure-git/
+#
+
+# put the branch names in a column format
+[column]
+    ui = auto
+
+# sort the branch list by the most recent commit date
+[branch]
+    sort = -committerdate
+
+# sort the tag list by dotted version numbers as integers
+[tag]
+    sort = version:refname
+
+[init]
+    defaultBranch = master
+
+# uses the histogram diff algorithm instead of myers
+# shows the code movement in different color
+# detect if a file has been renamed
+# prefix output with where the diff is coming
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+
+# some settings for a better push
+# default push the current branch to same name in the remote
+# if the upstream branch is not set, it will automatically set it
+# push all the tags to the remote server
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+
+# put the whole diff output for reference when writting the commit message
+[commit]
+    verbose = true
+
+[user]
+	email = email
+	name = username
+
+[core]
+	editor = vim
