@@ -60,6 +60,11 @@ set autoindent
 " Show line numbers
 set number
 
+" Config leader key to , (comma). Why? Because grammatically you should always
+" follow up with space after writing one which leaves every other key free to
+" be assigned to some functionality.
+let mapleader = ","
+
 " Show visual clue that the leader key was pressed
 set showcmd
 
