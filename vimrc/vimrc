@@ -44,6 +44,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'dense-analysis/ale'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 filetype plugin indent on
