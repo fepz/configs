@@ -83,7 +83,7 @@ colorscheme PaperColor
 " papercolor theme in vim-airline
 let g:airline_theme='papercolor'
 
-setlocal conceallevel=2
+set conceallevel=2
 
 " Key shortcut for opening nerdtree
 map <C-n> :NERDTreeToggle<CR>
