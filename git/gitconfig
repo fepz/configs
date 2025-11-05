@@ -46,4 +46,4 @@
 	name = username
 
 [core]
-	editor = vim
+	editor = nvim
